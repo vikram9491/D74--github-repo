@@ -10,6 +10,8 @@ echo -e "\e[36m>>>>>>>>>> Install nodeJS <<<<<<<<<<<<<\e[0m"
 yum install nodejs -y &>>${log}
 echo -e "\e[36m>>>>>>>>>> Create application User <<<<<<<<<<<<<\e[0m"
 useradd roboshop &>>${log}
+echo -e "\e[36m>>>>>>>>>>Cleaning up the directory and unzipping  <<<<<<<<<<<<<\e[0m"
+rm -rf /app &>>${log}
 echo -e "\e[36m>>>>>>>>>>Create Application directory <<<<<<<<<<<<<\e[0m"
 mkdir /app &>>${log}
 echo -e "\e[36m>>>>>>>>>> Download Application content  <<<<<<<<<<<<<\e[0m"
