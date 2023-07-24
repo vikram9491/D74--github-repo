@@ -1,5 +1,5 @@
 
-log = /tmp/roboshop.log
+log=/tmp/roboshop.log
 echo -e "\e[36m>>>>>>>>>> create catalogue service <<<<<<<<<<<<<\e[0m"
 cp catalogue.sh  /etc/systemd/system/catalogue.service &>>${log}
 echo -e "\e[36m>>>>>>>>>> create mongo db repo <<<<<<<<<<<<<\e[0m"
